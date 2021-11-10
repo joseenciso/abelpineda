@@ -1,0 +1,366 @@
+
+
+
+
+
+
+
+
+
+
+
+.container {
+    width: 80%;
+    margin: 3rem auto;
+}
+
+
+section .about-text,
+section .contact-text {
+    position: relative;
+    min-height: auto;
+    min-height: 25vh;
+    max-height: fit-content;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+section.about .about-text p,
+section.contact .contact-text p {
+    font-size: 1.4rem;
+    width: 60%;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section.about .about-text p{
+    min-height: 25%;
+    height: auto;
+    max-height: 0%;
+}
+
+section.contact .contact-text p {
+    min-height: 25%;
+    /*max-height: 100%;*/
+}
+
+section.contact form,
+section.contact .button-container {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    /*margin-top: 2.5rem;
+    margin-bottom: 2.2rem;*/
+    font-size: 1.4rem;
+}
+
+section.contact form label{
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4rem;
+    margin-top: 1.2rem;
+    margin-bottom: .5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.contact form input,
+section.contact form textarea,
+section.contact form input::before,
+section.contact form input,
+section.contact form input::after,
+section.contact form textarea {
+    border: solid #ffd700;
+    padding: .5rem !important;
+}
+
+section.contact form input[type]:focus,
+section.contact form textarea:focus {
+    outline: .2rem solid #ffd700;
+}
+
+section.contact form .contact-row input,
+section.contact form .contact-row textarea{
+    font-size: 1.2rem;
+    width: 90%;
+    margin-left: 1rem;
+    padding: .2rem .5rem;
+    border-width: .2rem;
+    border-radius: .2rem;
+}
+
+section.contact form textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+section.contact .button-container {
+    text-align: center;
+}
+
+section.contact .button-container button {
+    background-color: black;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #ffd700;
+    /*color: white;*/
+    font-family: 'Playball', cursive;
+    padding: .5rem 1.2rem;
+    width: 35%;
+    border-radius: .2rem;
+}
+
+section.contact .button-container button:hover {
+    text-shadow: -1px 0px 6px #FFFFFF;
+    border-radius: .3rem;
+}
+
+.show {
+    display: block!important;
+}
+
+.hide {
+    display: none!important;
+}
+
+@media (max-width: 360px) {
+    section.about {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        font-size: 1.2rem!important;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero .overlayer .text-container {
+        bottom: 1.5rem;
+        right: 1rem;
+    }
+
+    nav ul {
+        display: block;
+    }
+    
+    section.about {
+        min-height: auto;
+    }
+
+    section.about .about-text p {
+        top: 5%;
+        height: 100%;
+    }
+
+    section.hero img{
+        object-position: 15% 0%;
+    }
+
+    section.about p,
+    section.contact p {
+        font-size: 1rem;
+    }
+
+    section.awards {
+        position: relative;
+        height: 500px;
+        overflow: hidden;
+    }
+    
+    
+    .awards img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    section.awards .awards-content {
+        background: rgb(130,130,130);
+        background: radial-gradient(circle, rgba(130,130,130,0.6979166666666667) 0%, rgba(0,0,0,0.8267682072829132) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .awards .awards-content ul {
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+    }
+
+    section.contact form input,
+    section.contact form textarea,
+    section.contact .button-container button {
+        width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+/*
+    nav i.fa-hamburger,
+    nav i.fa-times {
+        display: none;
+    }*/
+
+    section.awards {
+        display: flex;
+        justify-content: center;
+    }
+
+    section.awards img {
+        object-fit: cover;
+        max-width: 50%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    
+    .awards .awards-content {
+        height: 100%;
+        max-width: 40%;
+        width: auto;
+        min-width: 350px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    
+    .awards .awards-content h2 {
+
+    }
+    
+    .awards .awards-content ul {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        line-height: 1.2rem;
+    
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+
+    header button {
+        height: 100%;
+    }
+
+    header button,
+    header button i {
+        width: 2.5rem;
+        padding: .2rem;
+        margin-right: .4rem;
+    }
+    /*
+    header button i.fa-hamburger{
+        display: block;
+    }*/
+
+    nav ul.burger-menu {
+        text-align: center;
+        position: absolute;
+        top: 0;
+        width: 100%!important;
+        height: 100vh;
+        background-color: black;
+        z-index: 0;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+
+        
+        transform: translateY(-100%);
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    /*
+    nav ul.burger-menu.open body,
+    nav ul.burger-menu.open html {
+        overflow-y: clip!important;
+        height: 1vh!important;
+    }
+    */
+
+    nav ul.burger-menu.open {
+    /*    overflow: clip!important;*/
+        transform: translateY(0%);
+
+    }
+
+    nav ul.burger-menu li{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    nav ul.burger-menu.scroll {
+        overscroll-behavior: contain;
+    }
+
+    section .about-text p,
+    section .contact-text p {
+        min-width: 90%;
+    }
+}
+/*
+@media (min-width: 769px) {
+    section.hero img {
+        object-position: 2%;
+    }
+}*/
+
+@media screen and (min-width: 768px) {
+    /*header nav,
+    main section{
+        /*max-width: 992px;
+        margin-left: auto;
+        margin-right: auto/
+    }
+
+    section.awards {
+        min-height: 550px;
+        max-height: 600px;
+     }*/
+
+    section.hero img {
+        object-position: 25%;
+    }
+/*
+    .awards .awards-content ul {
+        letter-spacing: 2px;
+        line-height: 1.5rem;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }*/
+}
+
+/*
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
