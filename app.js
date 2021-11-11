@@ -1,4 +1,4 @@
-var tabletWidth = 768;
+/*var tabletWidth = 768;
 
 if ( window > tabletWidth) {
     console.log("No Tablet: " + winWidth);
@@ -23,4 +23,4 @@ function HOLA(){
 $(document).ready( ()=> {
     HOLA();
 
-});
+});*/

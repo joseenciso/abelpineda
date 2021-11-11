@@ -120,8 +120,6 @@ section.hero {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-
-
 }
 
 section h3 {
@@ -183,7 +181,7 @@ section h2 {
     padding: .8rem .5rem;
 }
 
-.awards {
+section.awards {
     height: 60vh;
     /*position: relative;*/
     background-color: black; color: blanchedalmond;
@@ -191,7 +189,7 @@ section h2 {
     align-items: stretch;*/
 }
 
-section.awards h2 {
+section.awards .container h2 {
     width: 100%;
 }
 
@@ -217,16 +215,22 @@ section.awards {
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    min-height: 60vh;
+    height: 100%;
 }
 
 section.awards h2 {
     width: 100%;
+    align-self: flex-start;
 }
 
 section.awards .container {
+    align-self: flex-end;
+
     display: flex;
     flex-direction: row;
     width: 80%;
+    height: 100%;
     margin-top: 2rem;
 
 }
@@ -248,8 +252,9 @@ section.awards .img-container img {
     object-fit: cover;
     background-size: 100%;
     max-height: fit-content;
-    /*transform: scale(0.1);*/
-}*/
+    /*transform: scale(0.1);
+}
+*/
 
 .awards .awards-content {
     flex-grow: 2;
@@ -267,11 +272,20 @@ section.awards .img-container img {
     margin-bottom: .4rem;
 }
 
+section.contact .contact-text {
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (max-width: 768px) {
 
     section.about .container .about-text p,
     section.contact .container .contact-text p {
         padding-top: 1rem;
+    }
+
+    section.awards .img-container {
+        background-image: none;
     }
 }
 

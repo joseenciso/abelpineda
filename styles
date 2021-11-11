@@ -176,10 +176,7 @@ section.contact .button-container button:hover {
     }
     
     
-    .awards img {
-        width: 100%;
-        object-fit: cover;
-    }
+ 
 
     section.awards .awards-content {
         background: rgb(130,130,130);
@@ -233,11 +230,6 @@ section.contact .button-container button:hover {
         min-width: 350px;
         margin-top: auto;
         margin-bottom: auto;
-    }
-    
-    
-    .awards .awards-content h2 {
-
     }
     
     .awards .awards-content ul {
