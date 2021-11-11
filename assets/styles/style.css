@@ -12,6 +12,7 @@
 }
 
 body {
+    min-height: 100vh;
     font-family: 'Varela Round', sans-serif;
     background-color: #f5eded;
 }
@@ -39,9 +40,18 @@ header nav {
     flex-direction: row;
     align-self: center;
     align-items: center;
+    /*background: rgb(255,255,255);
+    /*background: linear-gradient(0deg, rgba(255,255,255,0) 6%, rgba(0,0,0,0.3393732492997199) 88%);*/
+    
+}
+
+.black {
+    background-color: black;
+}
+
+.nav-top-shawdow {
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,0) 6%, rgba(0,0,0,0.3393732492997199) 88%);
-    
 }
 
 header .brand{
@@ -111,7 +121,7 @@ section {
 }
 
 section:not(section.hero) {
-    min-height: 60vh;
+    min-height: 70vh;
 }
 
 section.hero {
@@ -122,13 +132,27 @@ section.hero {
     height: 100vh;
 }
 
-section h3 {
-    font-size: 2.2rem;
+section:not(section.hero) h2 {
+    width: 80%;
 }
 
 section h2 {
     font-size: 2.5rem;
     letter-spacing: 2px;
+    text-align: center;
+    border-top: #ffd700 .4rem solid;
+    border-bottom: #ffd700 .4rem solid;
+    padding: .8rem .5rem;
+}
+
+section h3 {
+    font-size: 2.2rem;
+}
+
+section h2,
+section .container {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero {
@@ -173,14 +197,6 @@ section h2 {
     margin-top: 1rem;
 }
 
-
-section h2 {
-    text-align: center;
-    border-top: #ffd700 .4rem solid;
-    border-bottom: #ffd700 .4rem solid;
-    padding: .8rem .5rem;
-}
-
 section.awards {
     height: 60vh;
     /*position: relative;*/
@@ -189,12 +205,12 @@ section.awards {
     align-items: stretch;*/
 }
 
-section.awards .container h2 {
-    width: 100%;
-}
-
 section .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 80%;
+    min-height: fit-content;
     margin-left: auto;
     margin-right: auto;
 }
@@ -205,10 +221,19 @@ section.about .container .about-text {
     margin: 0 auto;
 }
 
-section.contact .container .contact-text {
-    width: 50%;
-    min-height: 25vh;
-    margin: 0 auto;
+section.about .container .about-text p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.about .container .button-container {
+    text-align: center;
+}
+
+section.about .container .button-container button.download {
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
 }
 
 section.awards {
@@ -220,25 +245,13 @@ section.awards {
     height: 100%;
 }
 
-section.awards h2 {
-    width: 80%;
-}
-
-section.awards h2,
-section.awards .container {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 section.awards .container {
     align-self: flex-end;
-
     display: flex;
     flex-direction: row;
     width: 80%;
     height: 100%;
     margin-top: 2rem;
-
 }
 
 section.awards .img-container {
@@ -278,12 +291,24 @@ section.awards .img-container img {
     margin-bottom: .4rem;
 }
 
-section.contact .contact-text {
+
+section.contact .container .contact-text {
+    width: 50%;
+    min-height: 25vh;
+    margin: 0 auto;
     display: flex;
     align-items: center;
 }
 
 @media screen and (max-width: 768px) {
+
+    section .container .about-text {
+        width: 100%;
+    }
+
+    section.awards .img-container {
+        width: 30%;
+    }
 
     section.about .container .about-text p,
     section.contact .container .contact-text p {
@@ -297,8 +322,12 @@ section.contact .contact-text {
 
 @media screen and (min-width: 769px) {
 
-    section.about .container .about-text p,
+    /*section.about .container .about-text p,
     section.contact .container .contact-text p {
         transform: translateY(50%)!important;
+    }*/
+
+    section.awards .img-container {
+        width: 50%;
     }
 }
