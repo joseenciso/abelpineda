@@ -12,7 +12,6 @@
 }
 
 body {
-    min-height: 100vh;
     font-family: 'Varela Round', sans-serif;
     background-color: #f5eded;
 }
@@ -155,7 +154,7 @@ section .container {
     margin-right: auto;
 }
 
-.hero {
+section.hero {
     position: relative;
     overflow: hidden;
 }
@@ -183,8 +182,6 @@ section .container {
 
 .hero .overlayer .text-container {
     position: absolute;
-    bottom: 5rem;
-    right: 3rem;
 }
 
 .hero .overlayer .text-container h1 {
@@ -300,6 +297,33 @@ section.contact .container .contact-text {
     align-items: center;
 }
 
+
+@media screen and (max-width: 576px ) {
+    section.hero .text-container {
+        width: 100%;
+        bottom: 2rem;
+        right: 0rem!important;
+    }
+
+    section.hero .overlayer .text-container h2 {
+        width: 90%!important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section .container {
+        margin: 0;
+        width: 100%;
+    }
+
+    section h2,
+    section .container .about-text,
+    section .container .contact-text {
+        width: 90%!important;
+        margin: 0 auto;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     section .container .about-text {
@@ -326,6 +350,11 @@ section.contact .container .contact-text {
     section.contact .container .contact-text p {
         transform: translateY(50%)!important;
     }*/
+
+    .hero .overlayer .text-container {
+        bottom: 5rem;
+        right: 3rem;
+    }
 
     section.awards .img-container {
         width: 50%;
