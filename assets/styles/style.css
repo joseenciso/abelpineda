@@ -299,7 +299,8 @@ section.contact .container .contact-text {
 
 
 @media screen and (max-width: 576px ) {
-    section.hero .text-container {
+    
+        section.hero .text-container {
         width: 100%;
         bottom: 2rem;
         right: 0rem!important;
@@ -317,9 +318,21 @@ section.contact .container .contact-text {
     }
 
     section h2,
+    section .container,
     section .container .about-text,
     section .container .contact-text {
         width: 90%!important;
+        margin: 0 auto;
+    }
+
+    section.awards .img-container {
+        display: none;
+    }
+
+    section.awards .awards-content,
+    section.awards .awards-content ul {
+        width: 90%;
+        padding: 0;
         margin: 0 auto;
     }
 }
