@@ -79,7 +79,6 @@ nav button .fa-times {
     color: white;
     font-size: 1.6rem;
     text-shadow: 0px 0px 2px black;
-    display: none;
 }
 
 header nav ul{
@@ -314,6 +313,57 @@ section.contact .container .contact-text {
 
 
 @media screen and (max-width: 576px ) {
+
+    nav button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 10%;
+    }
+
+    nav button i.fa-times {
+        display: none;
+    }
+
+    nav button .fa-hamburger,
+    nav button .fa-hamburger::before,
+    nav button .fa-times,
+    nav button .fa-times::before {
+        width: 2rem;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    nav .burger-menu {
+        position: absolute;
+        top: -100vh;
+        left: 0;
+        padding-top: 2.5rem;
+        width: 100vw;
+        height: 100vh!important;
+        background-color: #333333;
+        padding-bottom: 3rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        /*align-content: center!important;*/
+        position: absolute;
+        top: 50%;
+    }
+
+    nav ul li {
+        margin-top: 1rem;
+        width: 100vw;
+        /*display: block;
+        transform: translateY(50%)!important;*/
+    }
+
+    nav ul li a {
+        height: 2rem;
+        width: 100%;
+    }
     
     section.hero .overlayer .text-container h2 {
         width: 90%!important;
@@ -346,12 +396,14 @@ section.contact .container .contact-text {
     }
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and ( min-width: 577px ){
     nav button .fa-hamburger,
-    nav button .fa-times { 
+    nav button .fa-times {
         display: none;
     }
+}
+
+@media screen and (max-width: 768px) {
     
     section.hero .text-container {
         width: 90%;
@@ -374,11 +426,6 @@ section.contact .container .contact-text {
 }
 
 @media screen and (min-width: 769px) {
-
-    /*section.about .container .about-text p,
-    section.contact .container .contact-text p {
-        transform: translateY(50%)!important;
-    }*/
 
     section .about-text,
     section .awards-content,
