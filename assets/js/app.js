@@ -46,6 +46,7 @@ $(document).ready(function(){
                 $(".fa-times").css("display", "block");
                 $(".fa-hamburger").css("display", "none");
                 $("nav .burger-menu").css("top", "0");
+                $("body").css("overflow-y", "hidden");
             });
 
             $("button .fa-times").click( ( ) => {
@@ -53,6 +54,7 @@ $(document).ready(function(){
                 $(".fa-times").css("display", "none");
                 $(".fa-hamburger").css("display", "block");
                 $("nav .burger-menu").css("top", "-100vh");
+                $("body").css("overflow-y", "scroll");
             });
         }
 
