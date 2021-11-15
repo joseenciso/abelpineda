@@ -268,7 +268,7 @@ section.awards .img-container {
     background-image: url("../image6.jpeg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: right;
+    background-position: 25%;
     width: 30%;
     object-fit: cover;
 }
@@ -364,9 +364,13 @@ section.contact .container .contact-text {
         height: 2rem;
         width: 100%;
     }
+
+    section.hero {
+        background-position: 15%;
+    }
     
     section.hero .overlayer .text-container h2 {
-        width: 90%!important;
+        /*width: 90%!important;*/
         margin-left: auto;
         margin-right: auto;
     }
@@ -405,10 +409,15 @@ section.contact .container .contact-text {
 
 @media screen and (max-width: 768px) {
     
+    section.hero {
+        background-position: 25%;
+    }
+    
     section.hero .text-container {
         width: 90%;
         bottom: 2rem;
-        right: 2em!important;
+        right: 5%;
+        left: 5%;
     }
     
     section .container .about-text {

@@ -37,26 +37,28 @@ $(document).ready(function(){
             let times = $(".fa-times");
             console.log(hamburger);
             console.log(times);
+
+            let burgerButton = $(".btn");
+            console.log(burgerButton);
+
+            $("button .fa-hamburger").click( ( ) => {
+                console.log("Hamburger");
+                $(".fa-times").css("display", "block");
+                $(".fa-hamburger").css("display", "none");
+                $("nav .burger-menu").css("top", "0");
+            });
+
+            $("button .fa-times").click( ( ) => {
+                console.log("Times");
+                $(".fa-times").css("display", "none");
+                $(".fa-hamburger").css("display", "block");
+                $("nav .burger-menu").css("top", "-100vh");
+            });
         }
 
     });
 
-    let burgerButton = $(".btn");
-    console.log(burgerButton);
-
-    $("button .fa-hamburger").click( ( ) => {
-        console.log("Hamburger");
-        $(".fa-times").css("display", "block");
-        $(".fa-hamburger").css("display", "none");
-        $("nav .burger-menu").css("top", "0");
-    });
-
-    $("button .fa-times").click( ( ) => {
-        console.log("Times");
-        $(".fa-times").css("display", "none");
-        $(".fa-hamburger").css("display", "block");
-        $("nav .burger-menu").css("top", "-100vh");
-    });
+    
 
 /*
     function onWindowsWidth(){
