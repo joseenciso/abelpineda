@@ -41,7 +41,7 @@ $(document).ready(function(){
             let burgerButton = $(".btn");
             console.log(burgerButton);
 
-            $("button .fa-hamburger").click( ( ) => {
+            $(".btn .fa-hamburger").click( ( ) => {
                 console.log("Hamburger");
                 $(".fa-times").css("display", "block");
                 $(".fa-hamburger").css("display", "none");
@@ -49,7 +49,7 @@ $(document).ready(function(){
                 $("body").css("overflow-y", "hidden");
             });
 
-            $("button .fa-times").click( ( ) => {
+            $(".btn .fa-times").click( ( ) => {
                 console.log("Times");
                 $(".fa-times").css("display", "none");
                 $(".fa-hamburger").css("display", "block");

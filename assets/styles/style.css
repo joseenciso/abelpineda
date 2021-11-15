@@ -16,7 +16,7 @@ body {
     background-color: #f5eded;
 }
 
-section.about button a {
+section.about .btn a {
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -38,7 +38,7 @@ header {
 }
 
 header nav a.brand,
-header nav button {
+header nav .btn {
     z-index: 100;
 }
 
@@ -69,13 +69,13 @@ header .brand{
     text-shadow: 0px 0px .2rem black;
 }
 
-nav button {
+nav .btn {
     background-color: transparent;
     border: none;
 }
 
-nav button .fa-hamburger,
-nav button .fa-times { 
+nav .btn .fa-hamburger,
+nav .btn .fa-times { 
     color: white;
     font-size: 1.6rem;
     text-shadow: 0px 0px 2px black;
@@ -98,18 +98,18 @@ header nav ul li {
 
 header .brand,
 nav ul li a,
-section button a {
+section .btn a {
     color: #e6e1e1;
     padding: .5rem .7rem;
     text-decoration: none;
 }
 
-section button a {
+section .btn a {
     color: #525252;
     font-weight: 700;
 }
 
-section button {
+section .btn {
     color: #333333;
     background-color: #ffd700;
     border: #ffd700 .2rem solid;
@@ -229,11 +229,11 @@ section.about .container .about-text p {
     margin-bottom: 1rem;
 }
 
-section.about .container .button-container {
+section.about .container ..btn-container {
     text-align: center;
 }
 
-section.about .container .button-container button.download {
+section.about .container ..btn-container .btn.download {
     margin: 1rem auto;
     padding: 1rem 2rem;
     font-size: 1.2rem;
@@ -294,22 +294,34 @@ section.contact .container .contact-text {
 
 @media screen and (max-width: 576px ) {
 
-    nav button {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+    nav .btn {
+        display: block;
         width: 15%;
+        min-height: 100%!important;
+        z-index: 101;
+        padding: .2rem;
+    }
+
+    nav .btn:hover,
+    nav .btn:hover i.fas {
+        cursor: pointer!important;
+    }
+
+    nav .btn i,
+    nav .btn i::before {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav .btn i.fa-times {
+        display: none;
         height: 100%!important;
     }
 
-    nav button i.fa-times {
-        display: none;
-    }
-
-    nav button .fa-hamburger,
-    nav button .fa-hamburger::before,
-    nav button .fa-times,
-    nav button .fa-times::before {
+    nav .btn .fa-hamburger,
+    nav .btn .fa-hamburger::before,
+    nav .btn .fa-times,
+    nav .btn .fa-times::before {
         width: 2rem;
         margin-top: auto;
         margin-bottom: auto;
@@ -378,8 +390,8 @@ section.contact .container .contact-text {
 }
 
 @media screen and ( min-width: 577px ){
-    nav button .fa-hamburger,
-    nav button .fa-times {
+    nav .btn .fa-hamburger,
+    nav .btn .fa-times {
         display: none;
     }
 }
