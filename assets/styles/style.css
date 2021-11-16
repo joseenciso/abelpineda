@@ -16,7 +16,7 @@ body {
     background-color: #f5eded;
 }
 
-section.about .btn a {
+section.about button a {
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -38,7 +38,7 @@ header {
 }
 
 header nav a.brand,
-header nav .btn {
+header nav button {
     z-index: 100;
 }
 
@@ -69,13 +69,13 @@ header .brand{
     text-shadow: 0px 0px .2rem black;
 }
 
-nav .btn {
+nav button {
     background-color: transparent;
     border: none;
 }
 
-nav .btn .fa-hamburger,
-nav .btn .fa-times { 
+nav button .fa-hamburger,
+nav button .fa-times { 
     color: white;
     font-size: 1.6rem;
     text-shadow: 0px 0px 2px black;
@@ -98,18 +98,18 @@ header nav ul li {
 
 header .brand,
 nav ul li a,
-section .btn a {
+section button a {
     color: #e6e1e1;
     padding: .5rem .7rem;
     text-decoration: none;
 }
 
-section .btn a {
+section button a {
     color: #525252;
     font-weight: 700;
 }
 
-section .btn {
+section button {
     color: #333333;
     background-color: #ffd700;
     border: #ffd700 .2rem solid;
@@ -229,11 +229,11 @@ section.about .container .about-text p {
     margin-bottom: 1rem;
 }
 
-section.about .container ..btn-container {
+section.about .container .button-container {
     text-align: center;
 }
 
-section.about .container ..btn-container .btn.download {
+section.about .container .button-container button.download {
     margin: 1rem auto;
     padding: 1rem 2rem;
     font-size: 1.2rem;
@@ -294,26 +294,26 @@ section.contact .container .contact-text {
 
 @media screen and (max-width: 576px ) {
 
-    nav .btn {
+    nav button {
         display: block;
         width: 15%;
-        min-height: 100%!important;
+        height: 100%!important;
         z-index: 101;
         padding: .2rem;
     }
 
-    nav .btn:hover,
-    nav .btn:hover i.fas {
+    nav button:hover,
+    nav button:hover i.fas {
         cursor: pointer!important;
     }
 
-    nav .btn i,
-    nav .btn i::before {
+    nav button i,
+    nav button i::before {
         margin-left: auto;
         margin-right: auto;
     }
 
-    nav .btn i.fa-times {
+    nav .btn-times {
         display: none;
         height: 100%!important;
     }
@@ -342,7 +342,7 @@ section.contact .container .contact-text {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 50%;
+        top: -100%;
     }
 
     nav ul li {
@@ -390,8 +390,8 @@ section.contact .container .contact-text {
 }
 
 @media screen and ( min-width: 577px ){
-    nav .btn .fa-hamburger,
-    nav .btn .fa-times {
+    nav button .fa-hamburger,
+    nav button .fa-times {
         display: none;
     }
 }

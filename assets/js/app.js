@@ -26,7 +26,7 @@ $(document).ready( ()=> {
 });*/
 
 $(document).ready(function(){
-    
+    /*
     $(window).resize( ( )=> {
         let widthWindow = $(window).width();
         console.log(widthWindow);
@@ -41,23 +41,27 @@ $(document).ready(function(){
             let burgerButton = $(".btn");
             console.log(burgerButton);
 
-            $(".btn .fa-hamburger").click( ( ) => {
-                console.log("Hamburger");
-                $(".fa-times").css("display", "block");
-                $(".fa-hamburger").css("display", "none");
-                $("nav .burger-menu").css("top", "0");
-                $("body").css("overflow-y", "hidden");
-            });
-
-            $(".btn .fa-times").click( ( ) => {
-                console.log("Times");
-                $(".fa-times").css("display", "none");
-                $(".fa-hamburger").css("display", "block");
-                $("nav .burger-menu").css("top", "-100vh");
-                $("body").css("overflow-y", "scroll");
-            });
+            
         }
 
+    });*/
+
+    $(".btn-hamburger").click( ( ) => {
+        console.log("Hamburger");
+        $(".btn-times").css("display", "block");
+        $(".btn-hamburger").css("display", "none");
+        $("nav .burger-menu").css("top", "0");
+        $("nav ul").css("top", "0");
+        $("body").css("overflow-y", "hidden");
+    });
+
+    $(".btn-times").click( ( ) => {
+        console.log("Times");
+        $(".btn-times").css("display", "none");
+        $(".btn-hamburger").css("display", "block");
+        $("nav .burger-menu").css("top", "-100vh");
+        $("nav ul").css("top", "-100vh");
+        $("body").css("overflow-y", "scroll");
     });
 
     
