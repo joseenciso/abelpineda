@@ -318,10 +318,10 @@ section.contact .container .contact-text {
         height: 100%!important;
     }
 
-    nav .btn .fa-hamburger,
-    nav .btn .fa-hamburger::before,
-    nav .btn .fa-times,
-    nav .btn .fa-times::before {
+    nav button .fa-hamburger,
+    nav button .fa-hamburger::before,
+    nav button .fa-times,
+    nav button .fa-times::before {
         width: 2rem;
         margin-top: auto;
         margin-bottom: auto;
@@ -339,10 +339,11 @@ section.contact .container .contact-text {
     }
 
     nav ul {
-        display: flex;
+        /*display: flex;*/
         flex-direction: column;
-        position: absolute;
-        top: -100%;
+        /*position: absolute;
+        top: -100%;*/
+        justify-content: center;
     }
 
     nav ul li {
