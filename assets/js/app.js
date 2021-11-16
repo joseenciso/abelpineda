@@ -1,50 +1,4 @@
-/*var tabletWidth = 768;
-
-if ( window > tabletWidth) {
-    console.log("No Tablet: " + winWidth);
-
-    $("button .fa-times").addClass('hide');
-    $("button .fa-times").removeClass('show');
-    $("button .fa-hamburger").addClass('hide');
-    $("button .fa-hamburger").removeClass("show");
-
-}
-
-
-function HOLA(){
-    $(window).resize( ()=> {
-        let screenWidth = $(window).width(); 
-
-        console.log("Width " + screenWidth)
-    });
-
-}
-
-$(document).ready( ()=> {
-    HOLA();
-
-});*/
-
 $(document).ready(function(){
-    /*
-    $(window).resize( ( )=> {
-        let widthWindow = $(window).width();
-        console.log(widthWindow);
-
-        if ( widthWindow < 576 ) {
-            console.log("W: " + widthWindow);
-            let hamburger = $(".fa-hamburger");
-            let times = $(".fa-times");
-            console.log(hamburger);
-            console.log(times);
-
-            let burgerButton = $(".btn");
-            console.log(burgerButton);
-
-            
-        }
-
-    });*/
 
     $(".btn-hamburger").click( ( ) => {
         console.log("Hamburger");
@@ -63,18 +17,6 @@ $(document).ready(function(){
         $("nav ul").css("top", "-100vh");
         $("body").css("overflow-y", "scroll");
     });
-
-    
-
-/*
-    function onWindowsWidth(){
-
-        let winWidth = $(window).width();
-        if ( winWidth <= 576 ) {
-
-            console.log(winWidth);
-        }
-    }*/
 
     let winHeight = $(window).height();
     console.log(winHeight);
@@ -97,6 +39,4 @@ $(document).ready(function(){
         }
     });
 
-    
-    //onWindowsWidth();
 });

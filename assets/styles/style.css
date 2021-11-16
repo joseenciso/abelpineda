@@ -128,11 +128,19 @@ section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+section.contact {
+    justify-content: flex-start;
 }
 
 section:not(section.hero) {
     min-height: 70vh;
+}
+
+section:not(section.hero) h2 {
+    margin-top: 2rem;
 }
 
 section.hero {
@@ -214,8 +222,7 @@ section .container {
     flex-wrap: wrap;
     width: 80%;
     min-height: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 section.about .container .about-text {
@@ -249,8 +256,8 @@ section.awards {
 }
 
 section.awards .container {
-    align-self: flex-end;
     display: flex;
+    align-self: flex-end;
     flex-direction: row;
     width: 80%;
     height: 100%;
@@ -262,7 +269,7 @@ section.awards .img-container {
     background-image: url("../image6.jpeg");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: 25%;
+    background-position: center;
     width: 30%;
     object-fit: cover;
 }
@@ -378,9 +385,9 @@ section.contact .container .contact-text {
         margin: 0 auto;
     }
 
-    section.awards .img-container {
+    /*section.awards .img-container {
         display: none;
-    }
+    }*/
 
     section.awards .awards-content,
     section.awards .awards-content ul {
@@ -394,6 +401,11 @@ section.contact .container .contact-text {
     nav button .fa-hamburger,
     nav button .fa-times {
         display: none;
+    }
+
+    section.awards .img-container {
+        /*display: block;*/
+        width: 40%;
     }
 }
 
@@ -409,9 +421,14 @@ section.contact .container .contact-text {
         right: 5%;
         left: 5%;
     }
-    
+
     section .container .about-text {
         width: 100%;
+    }
+
+    section.about .container .about-text,
+    section.contact .container .contact-text {
+        width: 90%;
     }
 
     section.about .container .about-text p,
@@ -419,9 +436,13 @@ section.contact .container .contact-text {
         padding-top: 1rem;
     }
 
-    section.awards .img-container {
-        background-image: none;
+    section .awards-content {
+        width: 60%;
     }
+
+    /*section.awards .img-container {
+        background-image: none;
+    }*/
 }
 
 @media screen and (min-width: 769px) {
