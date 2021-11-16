@@ -49,9 +49,6 @@ header nav {
     flex-direction: row;
     align-self: center;
     align-items: center;
-    /*background: rgb(255,255,255);
-    /*background: linear-gradient(0deg, rgba(255,255,255,0) 6%, rgba(0,0,0,0.3393732492997199) 88%);*/
-    
 }
 
 .black {
@@ -210,10 +207,8 @@ section.hero {
 
 section.awards {
     height: 60vh;
-    /*position: relative;*/
     background-color: black; color: blanchedalmond;
-    justify-content: center;/*
-    align-items: stretch;*/
+    justify-content: center;
 }
 
 section .container {
@@ -346,10 +341,7 @@ section.contact .container .contact-text {
     }
 
     nav ul {
-        /*display: flex;*/
         flex-direction: column;
-        /*position: absolute;
-        top: -100%;*/
         justify-content: center;
     }
 
@@ -385,10 +377,6 @@ section.contact .container .contact-text {
         margin: 0 auto;
     }
 
-    /*section.awards .img-container {
-        display: none;
-    }*/
-
     section.awards .awards-content,
     section.awards .awards-content ul {
         width: 90%;
@@ -404,7 +392,6 @@ section.contact .container .contact-text {
     }
 
     section.awards .img-container {
-        /*display: block;*/
         width: 40%;
     }
 }
@@ -439,10 +426,6 @@ section.contact .container .contact-text {
     section .awards-content {
         width: 60%;
     }
-
-    /*section.awards .img-container {
-        background-image: none;
-    }*/
 }
 
 @media screen and (min-width: 769px) {
