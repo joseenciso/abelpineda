@@ -88,9 +88,11 @@ $(document).ready(function(){
         if (scroll > percentage ) {
             console.log(percentage);
             $("nav").addClass("black");
+            console.log("BLACK");
             $("nav").removeClass("nav-top-shawdow");
         } else {
             $("nav").removeClass("black");
+            console.log("NoBlack")
             $("nav").addClass("nav-top-shawdow");
         }
     });
