@@ -173,7 +173,24 @@ section .container {
 
 section.hero {
     position: relative;
-    overflow: hidden;
+}
+
+/*section.gallery {
+    margin-top: auto;
+    margin-bottom: auto;
+}*/
+
+section.gallery .gallery-container {
+    max-height: 100vh;
+    width: 100vw;
+    display: flex;
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+section.gallery .gallery-container img {
+    object-fit: contain;
+    height: 80vh;
 }
 
 .hero .overlayer {

@@ -19,22 +19,22 @@ $(document).ready(function(){
     });
 
     let winHeight = $(window).height();
-    console.log(winHeight);
+    // console.log(winHeight);
     $(window).scroll(function(){
 
         var scroll = $(window).scrollTop();
+        //console.log("SCRLL: " + scroll)
         let winHeight = $(window).height();
-        let percentage = winHeight - (winHeight % 75);
+        // let percentage = winHeight - (winHeight % 75);
+        let percentage = 50;
 
         
-        if (scroll > percentage ) {
-            console.log(percentage);
+        if (scroll > 50 ) {
+            console.log("SCRLL: " + scroll + " PRECENT: " + percentage);
             $("nav").addClass("black");
-            console.log("BLACK");
             $("nav").removeClass("nav-top-shawdow");
         } else {
             $("nav").removeClass("black");
-            console.log("NoBlack")
             $("nav").addClass("nav-top-shawdow");
         }
     });
